@@ -46,11 +46,55 @@ img {
 
 i {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 h5 {
     color: white;
 
+}
+
+.discount{
+    color: white;
+    background-color: red;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.eco{
+    color: white;
+    background-color: green;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.eco-left{
+    color: white;
+    background-color: green;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.favourite{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 10px;
+    right: 0;
+    top: 0;
 }
 
 /* Utils  */
@@ -68,7 +112,6 @@ h5 {
     width: 70%;
     min-height: 70px;
     margin: auto;
-    border: 1px dotted black;
 }
 
 /* Header */
@@ -79,6 +122,7 @@ header {
     margin: auto;
     margin-bottom: 30px;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
@@ -126,7 +170,7 @@ main {
     min-height: 600px;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 30px;
+   /*  margin-bottom: 30px; */
     background-color: white;
 }
 
@@ -135,15 +179,20 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 13px;
+    
 
 }
 
 .card {
     height: 500px;
     width: 345px;
-    margin-top: 20px;
+    margin-bottom: 70px;
+    display: block;
+    position: relative;
 
 }
+
 
 /* Footer */
 footer {
