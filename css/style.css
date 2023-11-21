@@ -97,6 +97,20 @@ h5 {
     top: 0;
 }
 
+.favourite-hover{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    padding: 5px 20px;
+    right: 0;
+    top: 0;
+
+    display: none;
+}
+
+
+
+
 /* Utils  */
 .navbar {
     display: flex;
@@ -170,7 +184,7 @@ main {
     min-height: 600px;
     margin: auto;
     margin-top: 0;
-   /*  margin-bottom: 30px; */
+    /*  margin-bottom: 30px; */
     background-color: white;
 }
 
@@ -190,9 +204,20 @@ main {
     margin-bottom: 70px;
     display: block;
     position: relative;
-
+    
 }
 
+/* .card-pic{
+    display: none;
+} */
+
+/* .card:hover .card-pic{
+    z-index: ;
+} */
+
+.favourite:hover .favourite-hover{
+    display: inline-block;
+}
 
 /* Footer */
 footer {
