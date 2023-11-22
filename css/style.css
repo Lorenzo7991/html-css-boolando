@@ -37,6 +37,7 @@ ul {
 img {
     height: 100%;
     width: auto;
+    display: block;
     background-size: cover;
 }
 
@@ -141,6 +142,7 @@ header {
     right: 0;
     left: 0;
     background-color: orangered;
+    box-shadow: 0 1px 3px gray;
 }
 
 .header-short {
@@ -207,13 +209,25 @@ main {
     
 }
 
-/* .card-pic{
-    display: none;
-} */
+.card-img{
+    height: 500px;
+    width: 345px;
+    display: block;
+}
 
-/* .card:hover .card-pic{
-    z-index: ;
-} */
+.card .secondary-pic,
+.card:hover .main-pic{
+    display: none;
+}
+
+.card:hover .secondary-pic{
+    display: block;
+}
+
+.card-text{
+    min-height: 40px;
+    border: 1px dotted black;
+}
 
 .favourite:hover .favourite-hover{
     display: inline-block;
